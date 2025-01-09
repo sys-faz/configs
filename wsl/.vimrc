@@ -36,6 +36,5 @@ set showmatch
 if !has('gui_running')
     set t_Co=256
 endif
-set termguicolors
 
 " enable color themes  "
