@@ -76,6 +76,7 @@ ZSH_COLORIZE_STYLE="colorful"
 ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
 
 HISTFILE=~/.zsh_history
@@ -136,3 +137,4 @@ alias htb_sp_us='sudo openvpn "$PATH_HTB_SP_US"'
 alias htb_au='sudo openvpn "$PATH_HTB_AU"'
 alias fzf='fzf --preview "batcat --color=always --style=numbers {}" --preview-window=right,65%'
 alias fvim='vim $(fzf --preview "batcat --color=always --style=numbers {}" --preview-window=right,65%)'
+

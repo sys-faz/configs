@@ -6,8 +6,8 @@ set number
 set relativenumber
 
 " change linenumbers color  "
-:highlight LineNr ctermfg=44 guifg=#00c4db
-:highlight CursorLineNr cterm=bold ctermfg=44 guifg=#00c4db
+:highlight LineNr ctermfg=117 guifg=#87ceeb
+:highlight CursorLineNr cterm=bold ctermfg=117 guifg=#87ceeb
 " enable mouse "
 set mouse=a
 
@@ -36,5 +36,6 @@ set showmatch
 if !has('gui_running')
     set t_Co=256
 endif
+" set termguicolors "
 
 " enable color themes  "
