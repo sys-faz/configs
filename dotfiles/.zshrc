@@ -138,3 +138,4 @@ alias htb_au='sudo openvpn "$PATH_HTB_AU"'
 alias fzf='fzf --preview "batcat --color=always --style=numbers {}" --preview-window=right,65%'
 alias fvim='vim $(fzf --preview "batcat --color=always --style=numbers {}" --preview-window=right,65%)'
 
+neofetch
