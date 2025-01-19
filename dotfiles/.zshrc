@@ -128,6 +128,7 @@ alias la="eza -la --color=always --group-directories-first --icons"
 
 #ctf
 
+alias bat="batcat"
 alias thm_au='sudo openvpn "$PATH_THM_AU"'
 alias thm_us_vip='sudo openvpn "$PATH_THM_US_VIP"'
 alias thm_eu_vip='sudo openvpn "$PATH_THM_EU_VIP"'
@@ -135,7 +136,6 @@ alias check_thm="curl 10.10.10.10/whoami"
 alias htb_academy_us='sudo openvpn "$PATH_HTB_ACADEMY_US"'
 alias htb_sp_us='sudo openvpn "$PATH_HTB_SP_US"'
 alias htb_au='sudo openvpn "$PATH_HTB_AU"'
-alias fzf='fzf --preview "batcat --color=always --style=numbers {}" --preview-window=right,65%'
-alias fvim='vim $(fzf --preview "batcat --color=always --style=numbers {}" --preview-window=right,65%)'
+alias fzf='fzf --preview "bat --color=always --style=numbers {}" --preview-window=right,65%'
+alias fvim='vim $(fzf --preview "bat --color=always --style=numbers {}" --preview-window=right,65%)'
 
-neofetch
