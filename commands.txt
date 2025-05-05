@@ -1,0 +1,59 @@
+sudo pacman -S bluez blueman bluez-utils
+
+sudo modprobe btusb
+
+sudo systemctl enable bluetooth
+
+sudo systemctl start bluetooth
+
+sudo pacman -S git github-cli htop nano vim neovim kitty zsh zsh-autocomplete zsh-autosuggestions eza fzf bat tmux discord spotify-launcher gparted grub-customizer
+
+gh auth login
+
+gh repo clone sys-faz/configs
+
+sudo cp -r ~/configs/font/* /usr/share/fonts/
+
+mkdir .zsh
+
+ln -s /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+ln -s /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+chsh -s $(which zsh)
+
+mkdir gitclone
+
+cd gitclone
+
+git clone https://aur.archlinux.org/yay.git
+
+cd yay
+
+makepkg -si
+
+curl -fsS https://dl.brave.com/install.sh | sh
+
+curl -sS https://starship.rs/install.sh | sh
+
+starship preset nerd-font-symbols -o ~/.config/starship.toml
+
+yay -S cava
+
+yay -S visual-studio-code-bin
+
+yay -S extension-manager
+
+yay -S preload
+
+yay -S timeshift
+
+curl -O https://blackarch.org/strap.sh
+
+echo bbf0a0b838aed0ec05fff2d375dd17591cbdf8aa strap.sh | sha1sum -c
+
+chmod +x strap.sh
+
+sudo ./strap.sh
+
+sudo pacman -Syu
